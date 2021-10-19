@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Template</title>
+      <link rel="icon"
+         type="image/png"
+         href="logo.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+      <script src="https://kit.fontawesome.com/3a3c813962.js" crossorigin="anonymous"></script>
+      <!--FONTS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="//code.jquery.com/jquery-2.1.0.js"></script>
+   </head>
+   <style>
+      body {
+      padding: 0px;
+      margin:0px;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      height: 100%;
+      background-color: #1D1D1D;
+      transition: background-color .2s;
+      }
+      #nav {
+      margin:0;
+      position: relative;
+      top:0;
+      margin-left: 50px;
+      color:#ffffff;
+      background-color:#111;
+      padding: 8px;
+      display: flex;
+      font-family: 'Poppins', sans-serif;
+      justify-content: space-between;
+      align-items: center;
+      }
+      #nav img {
+      height: 45px;
+      }
+      #main {
+      padding: 10px;
+      text-align: center;
+      margin-left:40px;
+      }
+      #sidediv {
+          height: 100%;
+  position: fixed;
+  padding: 10px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+      }
+      #sidediv i {
+  padding: 5px;
+  margin-bottom: 7px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#menubtn {
+    position: absolute;
+    top:0;
+    margin-top:15px;
+}
+
+.sidenav {
+  height: 100%;
+  text-align: left;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-family: 'Sora', sans-serif;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.25s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  border-right: 2px solid #f3f3f3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  color:grey;
+  right: 25px;
+  margin: 7px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+footer {
+      padding: 15px;
+      text-align: left;
+      }
+      footer div {
+      float:right;
+      }
+      footer b:hover {
+      text-decoration: underline;
+      }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+      
+   </style>
+  <script>
+function openNav() {
+  document.getElementById("sidenavdiv").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("sidenavdiv").style.width = "0";
+}
+   </script>
+   <body>
+      <div id="nav">
+         <h5 onclick="window.location.href='index.html';"><img src="logo.png" alt="logo"> Dashboard Website</h5>
+      </div>
+      <div id ="main">
+      <div id="sidediv">
+          <i id="menubtn" onclick="openNav()" class="fas fa-bars"></i>
+<i class="fas fa-home"></i>
+<i class="fas fa-compass"></i>
+<i class="fas fa-cog"></i>
+<i class="fas fa-user-circle"></i>
+      </div>
+      <div id="sidenavdiv" class="sidenav">
+  <span class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></span>
+  <a href="#"><i class="fas fa-home"></i> Home</a>
+  <a href="#"><i class="fas fa-compass"></i> Explore</a>
+  <a href="#"><i class="fas fa-cog"></i> Setting</a>
+  <a href="#"><i class="fas fa-info-circle"></i> About</a>
+</div>
+     </div>
+   </body>
+</html>
