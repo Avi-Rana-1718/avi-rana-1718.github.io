@@ -10,8 +10,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
   </head>
   <style>
       body {
@@ -19,10 +17,7 @@
           color:white;
       }
       #main {
-          margin-left:260px;
-      }
-      #main-content {
-          padding: 10px;
+          margin-left:265px;
       }
       #nav {
           width: 100%;
@@ -32,13 +27,14 @@
           position: absolute;
           top:0;
           z-index:2;
+          display:none;
       }
       header {
           padding-top:65px;
           padding: 10px;
-          background-image: url("https://images.wallpapersden.com/image/download/jujutsu-kaisen-characters_bGppbmeUmZqaraWkpJRnZWltrWZmamc.jpg");
+          border-radius: 3px;
+          background-image: url("https://media.discordapp.net/attachments/798241715663798275/923153039504838697/jujutsu-kaisen-season-2-movie-prequel-details.jpeg");
           background-repeat: no-repeat;
-          background-size: cover;
       }
       header h4 {
           font-family: 'Poppins', sans-serif;
@@ -55,11 +51,17 @@
           margin: 5px;
           font-family: 'Poppins', sans-serif;
       }
+      #main-content {
+          padding: 10px;
+      }
+      .heading {
+          font-family: 'Poppins', sans-serif;
+      }
       #sidebar {
           height: 100%;
           width:260px;
           z-index:1;
-          padding-top:60px;
+          padding-top:20px;
           overflow-x:hidden;
           background-color: #0F0F11;
           transition: 0.2 width;
@@ -80,21 +82,22 @@
          padding-right: 30px;
          display: none;
       }
-      .heading {
-          font-family: 'Poppins', sans-serif;
-      }
       #authd {
           padding: 15px;
       }
       @media screen and (max-width: 600px) {
   #sidebar {
  width:0px;
+ padding-top:60px;
   }
   #main {
       margin-left:0px;
   }
+  #nav {
+      display: block;
+  }
   #closebtn {
-      display:block;
+      display: block;
   }
 }
   </style>
@@ -119,12 +122,9 @@
       <div id="main">
 <br><br>
           <header>
-              <br><br>
           <h4>Jujutsu Kaisen</h4>
           <small>Idly indulging in baseless paranormal activities with the Occult Club, high schooler Yuuji Itadori spends his days at either the clubroom or the hospital, where he visits his bedridden grandfather. However, this leisurely lifestyle soon takes a turn for the strange when he unknowingly encounters a cursed item. Triggering a chain of supernatural occurrences, Yuuji finds himself suddenly thrust into the world of Curses—dreadful beings formed from human malice and negativity—after swallowing the said item, revealed to be a finger belonging to the demon Sukuna Ryoumen, the "King of Curses".</small><br>
-<br>
           <button>Watch</button>
-          <br>
       </header>
       <div id="main-content">
       <h5 class="heading">New Release</h5>
