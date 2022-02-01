@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: avi-rana-1718.github.io
+Token: 0b9da64932ddb2573d0925e5d4ee4dee44c6903c0d6e243a91e680d6964f46ad
