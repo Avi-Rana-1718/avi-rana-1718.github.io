@@ -104,5 +104,29 @@ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 
             <br><button onclick="window.location.href='https://avi-rana-1718.github.io/Mangasoap';">Open <i class="fas fa-external-link-alt"></i></button>
         </div>
     </div>
+<script>
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/975642838551379998/2bbkeng-RLvQK3cCpU50_jJGc0mnWlb7V9CP_kzexe_JYIwizaI7KbWyzOVFFP2ivr0x");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const param = {
+        username: "Tracker",
+        avatar_url: "https://media.discordapp.net/attachments/882916126806396939/975696066383085578/tracker.png",
+        content: null,
+"embeds": [
+    {
+      "description": `[avi-rana-1718.github.io](https://avi-rana-1718.github.io/) loaded`,
+      "color": 3158326,
+      "author": {
+        "name": "Site loaded"
+      }
+    }
+  ]
+      }
+
+      request.send(JSON.stringify(param));
+    </script>
+
    </body>
 </html>
