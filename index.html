@@ -13,120 +13,110 @@
       <!--FONTS-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap" rel="stylesheet">
-   </head>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   </head>
    <style>
-   header {
-       text-align: center;
-       justify-item: center;
-       padding: 25px;
-     font-family: 'Manrope', sans-serif;
-   }
-   header h4 a {
-       color: grey;
-       margin: 4px;
-   }
-   #projects {
-       justify-items: start;
-   }
-   #projects div {
-       padding: 12px;
-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-       border-radius: 4px;
-       margin: 10px;
-       width: auto;
-       float: left;
-       max-width: 31%;
-       background-color: #f8f8ff;
-       font-family: 'Poppins', sans-serif;
-   }
-   #projects div:hover {
-       background-color: #f3f3f3;
-   }
-   #projects div img {
-       max-width: 100%;
-       width:auto;
-       display: block;
-       border-radius: 3px;
-   }
-   #projects button {
-       border:none;
-       border-radius:3px;
-       color:grey;
-       padding: 4px;
-       margin: 6px;
-       background-color: #f8f8ff;
-   }
-   #projects button:hover {
-       color:#282828;
-       text-decoration: underline;
-       background-color: #fff;
-   }
-   @media only screen and (max-width: 600px) {
-      #projects div {
-      max-width: 100%;
-      }
-      }
-</style>
-<body>
-<header>
-    <h3>Welcome!</h3>
-    <small>Pleased to see you here. This is _AviRana's personal website/portfolio.</small>
-    <h4><a href="https://www.twitter.com/_AviRana"><i class="fab fa-twitter"></i></a><a href="https://github.com/Avi-Rana-1718"><i class="fab fa-github"></i></a><a href="https://www.patreon.com/_avirana"><i class="fab fa-patreon"></i></a><a href="https://discord.com/users/738331369616441427"><i class="fab fa-discord"></i></a></h4>
-</header>
-    <div id="projects">
-                <div>
-            <img src="https://media.discordapp.net/attachments/935080227086946365/943936476201254962/kirito_icons.jpeg">
-            <br>
-            <h3>Megumin</h3>
-            <small>Megumin is an anime scraper bot for Discord. Invite the bot to your server to try it!
-</small>
+    body {
+        background-color: #0D1116;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
 
-            <br>
-<button onclick="window.location.href='https://bit.ly/MeguminInvite';">Invite <i class="fas fa-external-link-alt"></i></button>
-<button onclick="window.location.href='https://avi-rana-1718.github.io/Megumin';">Website <i class="fas fa-external-link-alt"></i></button>
-</div>
-        <div>
-            <img src="https://media.discordapp.net/attachments/834079765329215530/878738963836317726/infinity.png">
-            <h3>Anilimited</h3>
-            <small>A discord bot that scrapes anime from different website! (i made the website)</small>
-            <br><button onclick="window.location.href='https://eptphantom.github.io/Anilimited';">Open <i class="fas fa-external-link-alt"></i></button>
-        </div>
-                        <div>
-            <img src="https://media.discordapp.net/attachments/798241715663798275/919554360525086730/20211212_171034.png">
-            <br>
-            <h3>MangaSoap</h3>[Discontinued]<br><br>
-            <small>A website for creators to share their work on the internet!</small>
-            <br><button onclick="window.location.href='https://avi-rana-1718.github.io/Mangasoap';">Open <i class="fas fa-external-link-alt"></i></button>
-        </div>
-    </div>
-<script>
-      const request = new XMLHttpRequest();
-      request.open("POST", secrets.WEBHOOK_TOKEN);
-
-      request.setRequestHeader('Content-type', 'application/json');
-
-      const param = {
-        username: "Tracker",
-        avatar_url: "https://media.discordapp.net/attachments/882916126806396939/975696066383085578/tracker.png",
-        content: null,
-"embeds": [
-    {
-      "description": `[avi-rana-1718.github.io](https://avi-rana-1718.github.io/) loaded`,
-      "color": 3158326,
-      "author": {
-        "name": "Site loaded"
-      }
     }
-  ]
-      }
+    #overlay {
+        margin: 5px;
+        font-family: 'Poppins', sans-serif;
+        width: auto;
+        max-width: 90%;
+        flex-grow: 0.2;
+        border-radius: 3px;
+        background-color: #282828;
+    }
+    #overlay:hover {
+        background-color: #212121;
+    }
+    header {
+        padding: 7px;
+    }
+    header img {
+        width: 1.5em;
+        border-radius: 3px;
 
-      request.send(JSON.stringify(param));
-    </script>
+    }
+    header a {
+        text-decoration: none;
+        color: #9F9FA0;
+    }
+    header ul {
+        padding: 10px;
+        list-style: none;
+    }
+    header ul li {
+        padding: 4px;
+    }
+    #main {
+        flex-grow: 3;
+        padding: 10px;
+        font-family: 'Lato', sans-serif;
+    }
+    #main ul {
+        list-style: none;
+    }
+    .project-item {
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: rgba(253, 253, 253, 0.02) 0px 1px 3px 0px, rgba(229, 232, 234, 0.15) 0px 0px 0px 1px;
+    }
+    .project-item:hover {
+        background-color: #282828;
+    }
+    .banner {
+        height: 5em;
+        border-radius: 3px;
+    }
+    #theme-switch {
+        color: #fff;
+        background-color: #161B22;
+        border-radius: 3px;
+        margin: 4px;
+        border: 0.5px solid #fff;
+        padding: 7px;
+        float: right;
+    }
 
+   </style>
+   <body>
+   <div id="overlay">
+    <header>
+        <h3><img src="https://github.com/Avi-Rana-1718/Avi-Rana-1718.github.io/blob/main/logo.png?raw=true"> AviRana</h3>
+<h5>
+    <ul>
+        <li><a href="https://github.com/Avi-Rana-1718"><i class="fab fa-github"></i>  Github</a></li>
+        <li><a href="https://www.twitter.com/_AviRana" style="color: #1DA1F2;"><i class="fab fa-twitter"></i> Twitter</a></li>
+        <li><a href="https://discord.com/users/738331369616441427" style="color: #7289da;"><i class="fab fa-discord"></i> Discord</a></li>
+        <li><a href="https://open.spotify.com/user/u5w34hsav3ha99o85x5at1kiy" style="color: #1DB954;"><i class="fab fa-spotify"></i> Spotify</a></li>
+    </ul>
+        </h5>
+    </header>
+   </div>
+   <div id="main">
+    <h4><u>Projects</u></h5>
+        <br>
+    <ul>
+        <li> 
+            <div class="project-item">
+                <h5>VidPlayer</h5>
+                <img class="banner" src="https://raw.githubusercontent.com/Avi-Rana-1718/VidPlayer/main/banner.png">
+                <br>
+                A custom video player written in js.<br>
+                <h4>
+                <a href="https://github.com/Avi-Rana-1718/VidPlayer"><i class="fab fa-github"></i></a>
+                <a href="https://avi-rana-1718.github.io/VidPlayer/"><i class="fas fa-external-link-alt"></i></a>
+                </h4>
+            </div>
+        </li>
+    </ul>
+   </div>
+   <script src="intro.js"></script>
    </body>
 </html>
