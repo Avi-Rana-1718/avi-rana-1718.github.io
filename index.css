@@ -47,8 +47,11 @@ header ul li i {
     padding: 10px;
     font-family: 'Lato', sans-serif;
 }
-#main ul {
-    list-style: none;
+ul {
+    list-style:none;
+}
+#books ul {
+    list-style: circle;
 }
 .item {
     padding: 15px;
