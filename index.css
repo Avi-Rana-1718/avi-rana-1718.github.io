@@ -90,6 +90,7 @@ ul {
     }
     #overlay li {
         display: inline;
+        font-size: 0.8em;
     }
 #overlay i {
     display: none;
