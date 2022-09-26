@@ -1,2 +1,2 @@
-# Avi-Rana-1718.github.io
-Config files for my GitHub profile.
+# Avi-Rana-1718
+Personal portfolio website for Avi Rana
