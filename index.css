@@ -95,4 +95,7 @@ ul {
 #overlay i {
     display: none;
 }
+#overlay:hover {
+    background-color: #0D1116;
+}
  }
