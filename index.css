@@ -1,51 +1,28 @@
 body {
-    background-color: #0D1116;
-    color: #fff;
-    display: flex;
+    background-color: #F9F9FA;
+    color: #3A4145;
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
-    flex-direction: row;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
 
-}
-#overlay {
-    margin: 5px;
-    font-family: 'Poppins', sans-serif;
-    height: 98vh;
-    flex-grow: 0.2;
-    border-radius: 3px;
-    background-color: #282828;
-}
-#overlay:hover {
-    background-color: #212121;
 }
 header {
-    padding: 7px;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+    padding: 15px;
 }
+
 header img {
-    width: 1.5em;
+    width: 5.5em;
     border-radius: 3px;
 
 }
-header a {
-    text-decoration: none;
-    color: #9F9FA0;
-}
-header a:hover {
-    text-decoration: underline;
-}
-header ul {
-    padding: 10px;
-    list-style: none;
-}
-header ul li {
-    padding: 4px;
-}
-header ul li i {
-    padding-right: 5px;
-}
 #main {
-    flex-grow: 3;
-    padding: 10px;
-    font-family: 'Lato', sans-serif;
+    padding: 15px;
+    color: #3A4145;
 }
 ul {
     list-style:none;
@@ -56,46 +33,29 @@ ul {
 .item {
     padding: 15px;
     border-radius: 5px;
-    box-shadow: rgba(253, 253, 253, 0.02) 0px 1px 3px 0px, rgba(229, 232, 234, 0.15) 0px 0px 0px 1px;
+    margin: 9px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.item:hover {
-    background-color: #282828;
-}
+
 .banner {
     height: 5em;
     border-radius: 3px;
 }
-#theme-switch {
-    color: #fff;
-    background-color: #161B22;
-    border-radius: 3px;
-    margin: 4px;
-    border: 0.5px solid #fff;
-    padding: 7px;
-    float: right;
+
+i {
+    margin: 5px;
 }
+
  @media only screen and (max-width:800px) {
-    body {
-        display: block;
-    }
-    #overlay {
-        background-color: #0D1116;
-        text-align: center;
-        height: fit-content;
-        padding: 5px;
-    }
-    #overlay ul {
-        text-align: center;
-        padding: 0px;
-    }
-    #overlay li {
-        display: inline;
-        font-size: 0.8em;
-    }
-#overlay i {
-    display: none;
+body {
+    margin-right: 8px;
+    display: block;
+    margin-left: 8px;
 }
-#overlay:hover {
-    background-color: #0D1116;
+header {
+    position: static;
+}
+#main {
+    margin-left: 0;
 }
  }
