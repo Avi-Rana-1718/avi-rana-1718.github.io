@@ -29,9 +29,7 @@ header img {
 ul {
     list-style:none;
 }
-#books ul {
-    list-style: circle;
-}
+
 .item {
     padding: 15px;
     border-radius: 5px;
@@ -44,8 +42,45 @@ ul {
     text-decoration: none;
     color: #3A4145;
     background-color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 .item a:hover {
+    text-decoration: underline;
+}
+
+/* BLOG */
+#blog {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+#blog li {
+    border-radius: 5px;
+    margin: 9px;
+    width: 300px;
+    padding: 15px;
+    padding-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+#blog span {
+    display: block;
+    text-decoration: underline;
+    font-size: larger;
+}
+#blog time {
+    font-size: smaller;
+}
+#blog a {
+    color: #282828;
+    background-color: #f3f3f3;
+    text-decoration: none;
+    padding: 7px 9px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+#blog a:hover {
     text-decoration: underline;
 }
 footer {
