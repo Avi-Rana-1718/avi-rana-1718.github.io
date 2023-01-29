@@ -3,11 +3,13 @@ body {
     color: #3A4145;
     font-family: 'Open Sans', sans-serif;
     height: 100%;
-    margin-left:10%;
-    margin-right: 10%;
+    margin-left:15%;
+    margin-right: 15%;
 
 }
 header {
+    display: flex;
+    justify-content: space-between;
     margin: 5px;
     font-family: 'Poppins', sans-serif;
     border-radius: 3px;
@@ -56,10 +58,7 @@ ul {
 }
 
 #blog li {
-    border-radius: 5px;
-    margin: 9px;
     width: 300px;
-    padding: 15px;
     padding-top: 5px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
@@ -87,7 +86,6 @@ footer {
     margin: 40px;
     color: #888;
     display: flex;
-    border-top: 6px solid #F9F9FA;
 }
 footer ul {
     display: flex;
@@ -101,6 +99,13 @@ footer a {
 /* MISC */
 i {
     margin: 5px;
+}
+#theme {
+    padding: 7px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 a.disabled {
     pointer-events: none;
