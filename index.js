@@ -1,5 +1,5 @@
 
-if((localStorage.themeId==0)||(localStorage.themeId==undefined)) {
+if(localStorage.themeId==0) {
     document.body.style.backgroundColor="#202020";
     document.body.style.color="#fff";
     document.getElementById("theme").innerHTML = `<i class="fas fa-sun"></i>`;
@@ -18,7 +18,7 @@ if((localStorage.themeId==0)||(localStorage.themeId==undefined)) {
 }
 
 function changeTheme() {
-    if((localStorage.themeId==0)||(localStorage.themeId==undefined)) {
+    if(localStorage.themeId==0) {
         document.body.style.backgroundColor="#f9f9fa";
         document.body.style.color="#3a4145";
         localStorage.setItem("themeId", "1");
