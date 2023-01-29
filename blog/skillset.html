@@ -4,14 +4,14 @@
       <title>AviRana</title>
       <link rel="icon"
          type="image/png"
-         href="images/logo.png">
+         href="../images/logo.png">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
       <script src="https://kit.fontawesome.com/3a3c813962.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="../index.css">
       <!--SEO-->
       <!-- Primary Meta Tags -->
 <title>AviRana</title>
@@ -39,11 +39,21 @@
     </head>
    <body>
     <header>
-        <img alt="Logo"src="images/avi.jpg"> 
-        <h3>AviRana</h3>
+        <div>
+            <img alt="Logo"src="../images/avi.jpg"> 
+            <h3 onclick="window.location.href='../index.html';">AviRana</h3>
+        </div>
+        <div>
+            <span id="theme" onclick="changeTheme()"><i class="fas fa-moon"></i></span>
+        </div>
     </header>
-
-
+    <span id="title"></span>
+    <h3>My Skillset</h3>
+    <hr>
+    <small>28/01/2023 | <span id="rtime"></span></small>
+    <article id="blogContent">
+        
+    </article>
     
             <footer>
                 @AviRana
@@ -55,5 +65,12 @@
                     <li><a title="Linkedin" href="https://www.linkedin.com/in/avi-rana/"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </footer>
+            <script src="../index.js"></script>
+
+            <script>
+                document.getElementById("title").innerHTML =  document.location.href.replace("file:///C:/Users/91987/Documents/GitHub/Avi-Rana-1718.github.io/","").replace(".html","");
+                document.title = document.getElementById("title").innerHTML;
+                document.getElementById("rtime").innerHTML = Math.round(document.getElementById("blogContent").innerHTML.length / 350) + ' mins read.'
+            </script>
    </body>
 </html>

@@ -50,6 +50,7 @@
             width: fit-content;
             border-radius:5px;
             display: flex;
+            color: black;
             padding: 12px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
             background-color: #fff;
@@ -62,10 +63,15 @@
         }
         nav {
             padding: 10px;
+            cursor: pointer;
+        }
+        nav:hover {
+            text-decoration: underline;
         }
         nav img {
         width: 1.5em;
     border-radius: 3px;
+    margin-right: 5px;
         }
         footer {
             padding: 15px;
@@ -73,7 +79,7 @@
       </style>
     </head>
     <body>
-        <nav><h3><img src="images/avi.jpg"> AviRana</h3></nav>
+        <nav onclick="window.location.href='index.html';"><h3><img src="images/avi.jpg">AviRana</h3></nav>
         <div id="main">
             <br><br><br><br>
         <div id="con">
@@ -87,5 +93,6 @@
 
         </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
