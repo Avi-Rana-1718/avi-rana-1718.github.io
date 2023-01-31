@@ -1,0 +1,17 @@
+{
+  "short_name": "AviRana",
+  "name": "avirana.com",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "type": "image/png",
+      "sizes": "375x375"
+    }
+  ],
+  "start_url": "https://avirana.com",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "display": "fullscreen",
+  "scope": "https://avirana.com"
+  
+}

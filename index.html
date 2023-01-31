@@ -12,11 +12,12 @@
       <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
       <script src="https://kit.fontawesome.com/3a3c813962.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="index.css">
+      <link rel="manifest" href="manifest.json">
       <!--SEO-->
       <!-- Primary Meta Tags -->
 <title>AviRana</title>
 <meta name="title" content="AviRana">
-<meta name="description" content="Hi there! I am Avi Rana. A student at Chitkara University. I try to make cool stuff in my free time. Check out all of my projects!">
+<meta name="description" content="I am Avi Rana. I try to make cool stuff in my free time. Check out all of my projects!">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
@@ -99,5 +100,12 @@
                 </ul>
             </footer>
             <script src="index.js"></script>
+            <script>
+                window.addEventListener("load", () => {
+          if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service.js");
+          }
+        });
+            </script>
    </body>
 </html>
