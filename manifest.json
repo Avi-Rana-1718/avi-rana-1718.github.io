@@ -1,17 +1,18 @@
 {
   "short_name": "AviRana",
-  "name": "avirana.com",
+  "name": "avirana",
   "icons": [
     {
-      "src": "images/logo.png",
+      "src": "images.png",
       "type": "image/png",
       "sizes": "375x375"
     }
   ],
-  "start_url": "https://avirana.com",
+  "description":"All things AviRana",
+  "start_url": "http://127.0.0.1:5500/index.html",
   "background_color": "#fff",
   "theme_color": "#fff",
-  "display": "fullscreen",
-  "scope": "https://avirana.com"
+  "display": "standalone",
+  "scope": "http://127.0.0.1:5500/index.html"
   
 }
