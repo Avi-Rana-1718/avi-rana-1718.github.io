@@ -9,10 +9,19 @@
     }
   ],
   "description":"All things AviRana",
+  "lang":"en",
   "start_url": "https://avirana.com",
   "background_color": "#fff",
   "theme_color": "#fff",
   "display": "standalone",
-  "scope": "https://avirana.com"
+  "scope": "https://avirana.com",
+  "screenshots": [
+    {
+      "src": "/images/screen.png",
+      "type": "image/png",
+      "sizes": "375x667",
+      "form_factor": "narrow"
+    }
+  ]
   
 }
