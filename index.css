@@ -14,6 +14,9 @@ header {
     font-family: 'Poppins', sans-serif;
     border-radius: 3px;
     padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 9px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 header h3:hover {
     cursor: pointer;
@@ -110,9 +113,11 @@ i {
 a.disabled {
     pointer-events: none;
     color: #888;
-    text-decoration: line-through;
 }
-
+h4 {
+    text-decoration: underline;
+    /* text-decoration-color: #0066FF; */
+}
  @media only screen and (max-width:800px) {
 body {
     margin-right: 8px;
