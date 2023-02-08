@@ -73,6 +73,7 @@ ul {
 }
 #blog time {
     font-size: smaller;
+    color: gray;
 }
 #blog a {
     color: #282828;
