@@ -1,135 +1,22 @@
-body {
-    background-color: #F7F8FA;
-    color: #3A4145;
-    font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    margin-left:15%;
-    margin-right: 15%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
+body {
     font-family: 'Poppins', sans-serif;
-    border-radius: 3px;
-    padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 9px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-header h3:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-header img {
-    width: 5.5em;
-    border-radius: 3px;
-
-}
-#main {
-    padding: 15px;
-    color: #3A4145;
-}
-ul {
-    list-style:none;
-}
-
-.item {
-    padding: 15px;
-    border-radius: 5px;
-    margin: 9px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-.item a {
-    padding: 7px 9px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #3A4145;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-}
-.item a:hover {
-    text-decoration: underline;
-}
-
-/* BLOG */
-#blog {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-}
-
-#blog li {
-    width: 300px;
-    padding-top: 5px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
-}
-#blog span {
-    display: block;
-    text-decoration: underline;
-    font-size: larger;
-}
-#blog time {
-    font-size: smaller;
-    color: gray;
-}
-#blog a {
-    color: #282828;
-    background-color: #fff;
-    text-decoration: none;
-    padding: 7px 9px;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    border-radius: 5px;
-}
-#blog a:hover {
-    text-decoration: underline;
-}
-footer {
-    margin: 40px;
-    color: #888;
-    display: flex;
-}
-footer ul {
-    display: flex;
-    flex-direction: row;
-}
-footer a {
-    color: #888;
-    margin: 2px;
-}
-
-/* MISC */
-i {
-    margin: 5px;
-}
-#theme {
-    padding: 7px;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-a.disabled {
-    pointer-events: none;
-    color: #888;
-}
-h4 {
-    text-decoration: underline;
-    /* text-decoration-color: #0066FF; */
-}
- @media only screen and (max-width:800px) {
-body {
-    margin-right: 8px;
-    display: block;
-    padding: 5px;
-    margin-left: 8px;
 }
 header {
-    position: static;
+    padding: 10px;
 }
-#main {
-    margin-left: 0;
+header h2 {
+    color: #3A53E3;
 }
- }
+.title {
+    padding: 10px;
+}
+ul.list {
+    margin: 13px;
+    padding:10px;
+}
+ul.list li {
+    background-color: #F6F6F6;
+    padding: 10px;
+}

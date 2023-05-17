@@ -39,80 +39,20 @@
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     </head>
    <body>
-    <header id="head">
-        <div>
-            <img alt="Logo"src="images/avi.jpg"> 
-            <h3>AviRana</h3>
-            <p>
-                Hi there! I am <u>Avi Rana</u>. A student at Chitkara University. I try to make cool stuff in my free time.
-            </p>
-        </div>
-        <div>
-            <span id="theme" onclick="changeTheme()"><i class="fas fa-moon"></i></span>
-        </div>
-
+    <!--Header-->
+    <header>
+        <h2>AviRana</h2>
     </header>
 
-    <h4>Blogs</h4>
-    <ul id="blog">
-        <li class="item">
-            <time>08/02/2023</time>
-            <span>Minor Projects</span>
-            <small>Other small projects worth mentioning made by me.</small>
-            <br><br>
-            <a href="blog/projects.html"><i class="fas fa-external-link-alt"></i>Read</a>
-        </li>
-        <li class="item">
-            <time>28/01/2023</time>
-            <span>My Skillset</span>
-            <small>A list of all my acquired skills in programming.</small>
-            <br><br>
-            <a href="blog/skillset.html"><i class="fas fa-external-link-alt"></i>Read</a>
+    <h4 class="title">Projects</h4>
+    <ul class="list">
+        <li>
+            <h5>Disha Learning</h5>
+            <p>Disha Learning is a learning platform contain a huge of resources for students with a complete login, document view system and dashboard UI.</p>
+            <a href="#">Github</a>
+            <a href="#">Website</a>
         </li>
     </ul>
 
-    <h4>Projects</h4>
-        <div class="item">
-            <h5>Disha Learning</h5>
-            <small>
-                Disha Learning is a learning platform contain a huge of resources for students with a complete login, document view system and dashboard UI.
-            </small>
-            <br><br>
-            <a title="Open project Github" href="https://github.com/Avi-Rana-1718/DishaLearning"><i class="fab fa-github"></i>Github</a>
-            <a title="Open Website" href="https://dishalearning.in"><i class="fas fa-external-link-alt"></i>Website</a>
-        </div>
-            <div class="item">
-                <h5>VidPlayer</h5>
-                <small>A custom video player written in js.</small>
-                <br><br>
-                <a title="Open project Github" href="https://github.com/Avi-Rana-1718/VidPlayer"><i class="fab fa-github"></i>Github</a>
-                <a title="Open Website" href="https://avi-rana-1718.github.io/VidPlayer/"><i class="fas fa-external-link-alt"></i>Website</a>
-            </div>
-            <div class="item">
-                <h5>Megumin</h5>
-                <small>
-                    A Discord bot that'll provide you with anime, written in discord.js                </small>
-                <br><br>
-                <a title="Open project Github" href="https://github.com/Avi-Rana-1718/Megumin"><i class="fab fa-github"></i>Github</a>
-                <a title="Discontinued project" class="disabled" href="#"><i class="fas fa-lock"></i>Website</a>
-            </div>
-            <footer>
-                @AviRana
-                <ul>
-                    <li><a title="Github" href="https://github.com/Avi-Rana-1718"><i class="fab fa-github"></i></a></li>
-                    <li><a title="Buymeacoffee" href="https://avirana.com/coffee"><i class="fas fa-coffee"></i></a></li>
-                    <li><a title ="Twitter" href="https://www.twitter.com/_AviRana"><i class="fab fa-twitter"></i></a></li>
-                    <li><a title="Discord" href="https://discord.com/users/738331369616441427"><i class="fab fa-discord"></i></a></li>
-                    <li><a title="Linkedin" href="https://www.linkedin.com/in/avi-rana/"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </footer>
-            <script src="index.js"></script>
-            <script>
-                window.addEventListener("load", () => {
-          if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("service.js");
-          }
-        });
-            </script>
    </body>
 </html>
