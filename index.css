@@ -61,15 +61,8 @@ section ul li p {
 ul li i {
     font-size: large;
 }
-/* footer {
-    display: flex;
-    font-family: 'DM Sans', sans-serif;
-    justify-content: space-between;
+@media screen and (max-width:800px) {
+    body {
+        margin: 8px;
+    }
 }
-footer ul {
-    list-style-type: none;
-    display: flex;
-}
-footer ul li i {
-    color: #888;
-} */
