@@ -39,6 +39,7 @@ header h1 {
 section ul {
     list-style-type: none;
     display: flex;
+    overflow-x: scroll;
 }
 section ul li {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -67,3 +68,23 @@ ul li i {
         margin: 8px;
     }
 }
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
