@@ -60,8 +60,13 @@ section ul li p {
     margin: 2px;
     font-weight: 500;
 }
+section ul li a {
+    color: #000;
+    text-decoration: none;
+}
 ul li i {
     font-size: large;
+    color: #3B82F6;
 }
 @media screen and (max-width:800px) {
     body {
