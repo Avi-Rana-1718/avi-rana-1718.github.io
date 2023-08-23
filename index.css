@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
+
+
 /* VAR */
 :root {
 --primary-color: #3A53E3;
@@ -31,6 +33,9 @@ header {
 header h1 {
     font-family: 'Sora', sans-serif;
     font-weight: 700;
+}
+h3::before {
+
 }
 .underline {
     text-decoration: underline;
@@ -74,6 +79,18 @@ section ul li a {
 ul li i {
     font-size: large;
     color: #3B82F6;
+}
+#socials {
+    text-align: right;
+    display: flex;
+    padding: 7px 2px;
+
+}
+#socials ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 @media screen and (max-width:800px) {
     body {
