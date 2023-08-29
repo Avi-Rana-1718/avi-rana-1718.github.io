@@ -34,45 +34,42 @@ header h1 {
     font-family: 'Sora', sans-serif;
     font-weight: 700;
 }
-h3::before {
-
-}
 .underline {
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
 }
 
-section ul {
+main ul {
     list-style-type: none;
     display: flex;
     overflow-x: scroll;
     background-color: #fff;
     padding: 5px;
 }
-section ul li {
+main ul li {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 5px;
     margin: 7px;
 }
-section ul li:hover {
+main ul li:hover {
     rotate: 5deg;
     margin: 8px;
 }
-section ul li:hover {
+main ul li:hover {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-section ul li img {
+main ul li img {
 border-top-left-radius: 5px;
 border-top-right-radius: 5px;
 max-width: 250px;
 max-height: 250px;
 }
-section ul li p {
+main ul li p {
     padding: 5px;
     margin: 2px;
     font-weight: 500;
 }
-section ul li a {
+main ul li a {
     color: #000;
     text-decoration: none;
 }
