@@ -1,0 +1,7 @@
+.MainList {
+    list-style-type: none;
+    display: flex;
+    overflow-x: scroll;
+    background-color: #fff;
+    padding: 5px;
+}

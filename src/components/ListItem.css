@@ -1,0 +1,28 @@
+.listLi {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    margin: 7px;
+}
+.listLi img {
+    border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+max-width: 250px;
+max-height: 250px;
+}
+.listLi a {
+    color: #000;
+    text-decoration: none;
+}
+.listLi p {
+    padding: 5px;
+    margin: 2px;
+    font-weight: 500;
+}
+.listLi i {
+    font-size: large;
+    color: #3B82F6;
+}
+.listLi:hover {
+    rotate: 5deg;
+    margin: 8px;
+}
