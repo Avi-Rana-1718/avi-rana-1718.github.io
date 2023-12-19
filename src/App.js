@@ -14,7 +14,7 @@ function App() {
     <Nav />
     <Routes>
     <Route path="/" element={<Main/>} />
-    <Route path="/blog" element={<Blog/>} />
+    <Route path="/blog/:id" element={<Blog/>} />
     {/* Redirect links */}
     <Route path="/github" element={<Github />} />
     <Route path="/linkedin" element={<LinkedIn />} />
