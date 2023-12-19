@@ -9,6 +9,10 @@ function Main() {
       <>
           <Nav />
         <main>
+        <h3>Blogs</h3>
+        <ul className="MainList">
+          <ListItem title="Website rewrite" url="/blog/website-rewrite" img={null} />
+        </ul>
         <h3>Projects</h3>
         <ul className="MainList">
         <ListItem title="Disha Learning" url="https://dishalearning.in" img="banner/disha.png" />
