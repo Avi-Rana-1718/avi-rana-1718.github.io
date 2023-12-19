@@ -1,0 +1,14 @@
+#cross {
+    color: #000;
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+article {
+    padding: 10px;
+    padding-top: 4rem;
+}
+article h2 {
+    font-weight: 500;
+}

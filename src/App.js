@@ -11,7 +11,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-    <Nav />
     <Routes>
     <Route path="/" element={<Main/>} />
     <Route path="/blog/:id" element={<Blog/>} />

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+
+import "./Blog.css";
 
 function Blog(props) {
 
@@ -22,9 +24,11 @@ useEffect(
 
     return (
         <>
+        <Link to="/"><i id="cross" class="fa-solid fa-xmark"></i></Link>
         <article>
-        <h4>{title}</h4>
+        <h2>{title}</h2>
         <time>{date}</time>
+        <hr />
         <p>{content}</p>
         </article>
         </>
