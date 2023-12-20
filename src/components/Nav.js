@@ -1,10 +1,9 @@
-import "./Nav.css";
 import Socials from "./Socials";
 
 function Nav() {
     return (
-        <nav>
-        <h1>Hi, my name is <span className="underline">Avi</span></h1>
+        <nav className="">
+        <h1 className="text-4xl">Hi, my name is <span className="underline decoration-brand">Avi</span></h1>
         <span>I try to make cool stuff in my freetime</span>
         <Socials />
         </nav>

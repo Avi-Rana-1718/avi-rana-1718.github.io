@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import {Link, useParams} from "react-router-dom";
 
-import "./Blog.css";
-
 function Blog(props) {
 
     const [title, setTitle] = useState(null);
