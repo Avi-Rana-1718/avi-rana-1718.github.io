@@ -22,12 +22,12 @@ useEffect(
 
     return (
         <>
-        <Link to="/"><i id="cross" class="fa-solid fa-xmark"></i></Link>
-        <article>
-        <h2>{title}</h2>
+        <Link to="/"><i class="fa-solid fa-xmark md:absolute left-5 top-5 text-xl"></i></Link>
+        <article className="">
+        <h2 className="text-2xl">{title}</h2>
         <time>{date}</time>
-        <hr />
-        <p>{content}</p>
+        <hr className="my-3"/>
+        <p dangerouslySetInnerHTML={{__html: content}}></p>
         </article>
         </>
     )

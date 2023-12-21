@@ -5,8 +5,8 @@ function Main() {
   document.title="AviRana";
     return (
       <>
-          <Nav />
-        <main className="bg-white">
+        <main className="bg-white"> 
+        <Nav />
         <h3 className="text-2xl">Blogs</h3>
         <ul className="flex">
           <ListItem title="Website rewrite" url="/blog/website-rewrite" img={null} />
