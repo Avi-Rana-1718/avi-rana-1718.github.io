@@ -14,7 +14,7 @@ useEffect(
         fetch("/blogs/" + id + ".json").then(res=>res.json()).then(data=>{
             setTitle(data.title);
             setContent(data.content);
-            setDate(Date(data.timestamp));
+            setDate(new Date(data.timestamp).getDate() + "/" + new Date(data.timestamp).getMonth() + "/" +  new Date(data.timestamp).getFullYear());
 
         })
     }
@@ -24,7 +24,7 @@ useEffect(
         <>
         <Link to="/"><i class="fa-solid fa-xmark md:absolute left-5 top-5 text-xl"></i></Link>
         <article className="">
-        <h2 className="text-2xl">{title}</h2>
+        <h2 className="text-2xl font-[500] my-1">{title}</h2>
         <time>{date}</time>
         <hr className="my-3"/>
         <p dangerouslySetInnerHTML={{__html: content}}></p>

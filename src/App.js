@@ -1,4 +1,3 @@
-import Nav from './components/Nav';
 import Main from './components/Main';
 import Blog from './components/Blog';
 

@@ -1,6 +1,6 @@
 function ListItem(props) {
 return (
-    <li className="m-3 rounded-md shadow-[rgba(0,0,0,0.05)_0px_6px_24px_0px,rgba(0,0,0,0.08)_0px_0px_0px_1px] hover:rotate-6 transition-all">
+    <li className="m-3 rounded-md shadow-[rgba(0,0,0,0.05)_0px_6px_24px_0px,rgba(0,0,0,0.08)_0px_0px_0px_1px] hover:rotate-6 transition-all dark:bg-[#313237]">
          <a href={props.url}>
          <img className=" w-64 rounded-t-md" src={props.img}  alt="banner_img"/>
             <p className="p-2">
