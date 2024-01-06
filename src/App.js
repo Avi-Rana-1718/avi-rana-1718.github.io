@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
+    <>
     <div className="p-3 mx-0 my-0 md:mx-[25vw]">
     <BrowserRouter>
     <Routes>
@@ -22,6 +23,7 @@ function App() {
     </Routes>
     </BrowserRouter>
     </div>
+    </>
   );
 }
 

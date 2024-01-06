@@ -5,7 +5,7 @@ function Main() {
   document.title="AviRana";
     return (
       <>
-        <main className="bg-white dark:bg-[#2A2A2A]"> 
+        <main className=""> 
         <Nav />
         <h3 className="text-2xl font-[500] my-1">Blogs</h3>
         <ul className="flex">

@@ -10,7 +10,7 @@
 
 @layer base {
     html {
-      @apply font-['JetBrains_Mono'] dark:bg-[#2A2A2A] dark:text-[#f3f3f3]
+      @apply font-['JetBrains_Mono'] dark:bg-[#2A2A2A] dark:text-[#f3f3f3] w-full h-full
     }
   }
   
