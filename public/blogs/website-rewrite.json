@@ -1,5 +1,5 @@
 {
-    "title":"Website rewrite",
-    "content":"Hello everyone 👋,<br /> I am <u>Avi Rana</u>, I like to code and make stuff in my free time. I'll be posting updates and progress for all my projects here. I remade the entire website in React and Tailwind CSS & will be working and upgrading and improving it. Stay tuned!",
-    "timestamp":1702969569831
+  "title": "Website rewrite",
+  "content": "Hello everyone 👋,<br /> I am <u>Avi Rana</u>, I like to code and make stuff in my free time. I'll be posting updates and progress for all my projects here. I remade the entire website in React and Tailwind CSS & will be working and upgrading and improving it. <br />Stay tuned!",
+  "timestamp": 1702969569831
 }
