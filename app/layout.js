@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <head>
     <script src="https://kit.fontawesome.com/c57dc26725.js" crossorigin="anonymous"></script>
       </head>
-      <body className={`md:flex md:flex-row ${jetbrains_mono.className} flex flex-col-reverse h-full`}>
+      <body className={`md:flex md:flex-row ${jetbrains_mono.className} flex flex-col h-full`}>
       <Sidebar />
       <main className="bg-[#181818] m-4 md:w-rounded border-2 border-slate-600 border-solid m-h-full h-[95vh] md:w-full">
         <div className="p-1 border-b-2 border-slate-600 border-solid flex justify-between align-baseline">
