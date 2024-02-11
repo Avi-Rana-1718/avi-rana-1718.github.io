@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    @apply font-['JetBrains_Mono'] bg-[#38393e] text-[#f3f3f3] w-full h-full
+  }
+  i {
+    @apply mx-1
+  }
+}
