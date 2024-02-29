@@ -1,10 +1,11 @@
-import { promises as fs } from 'fs';
 import Link from 'next/link';
 
 export default async function Blogs({params}) {
 
-    let file = await fs.readFile(process.cwd() + `/public/blogs/${params.id}.json`, 'utf8');
-    let data = JSON.parse(file);
+    let res = await fetch("https://raw.githubusercontent.com/Avi-Rana-1718/avi-rana-1718.github.io/main/public/blogs/" + params.id + ".json");
+    let data = await res.json();
+
+    console.log(data);
 
     let date = new Date(data.timestamp);
     return (
