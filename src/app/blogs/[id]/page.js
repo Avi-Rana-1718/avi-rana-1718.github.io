@@ -5,8 +5,6 @@ export default async function Blogs({params}) {
     let res = await fetch("https://raw.githubusercontent.com/Avi-Rana-1718/avi-rana-1718.github.io/main/public/blogs/" + params.id + ".json");
     let data = await res.json();
 
-    console.log(data);
-
     let date = new Date(data.timestamp);
     return (
         <section className="md:flex justify-center w-full my-16">
