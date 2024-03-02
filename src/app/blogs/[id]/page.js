@@ -12,7 +12,7 @@ export default async function Blogs({params}) {
                 <span className="text-[#5151c4]"><Link href="/">/</Link></span>
                 <h2 className="text-lg">{data.title}</h2>
                 <time className="text-sm">{date.getDate() + "/" + Number(date.getMonth()+1)+ "/" + date.getFullYear()}</time>
-                <span className="my-2" dangerouslySetInnerHTML={{__html: data.content}}></span>
+                <span className="my-2 block" dangerouslySetInnerHTML={{__html: data.content}}></span>
             </article>
         </section>
     )
