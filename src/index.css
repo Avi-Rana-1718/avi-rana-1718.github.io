@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    body {
+        @apply bg-[#373B51] text-[#fff] py-3 px-6 md:px-[30vw] h-lvh font-Hack;
+    }
+}
