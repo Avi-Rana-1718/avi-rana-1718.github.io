@@ -6,7 +6,7 @@ export default function Socials() {
         <>
         <Nav />
         <main className="py-3 mt-5 text-sm">
-        <h2 className="text-base mb-3 underline underline-offset-2">Projects</h2>
+        <h2 className="text-base mb-3 underline underline-offset-2">Socials</h2>
         <article>
             <ul className="list-[square]">
             <li className="pb-1"><a href="https://github.com/Avi-Rana-1718" className="hover:underline decoration-wavy underline-offset-4">github</a></li>
