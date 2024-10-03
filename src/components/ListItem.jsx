@@ -1,20 +1,7 @@
-export default function ListItem(props) {
-    let { title, desc, link, tags } = props
-
+export default function ListItem({label, href}) {
     return (
-        <li className="mt-3 list-[square]">
-            <div className="flex">
-            <a href={link} className="inline">{title} (</a>
-            <ul className="flex text-xs">
-                {tags.map((curr, index)=>{
-                    return <li key={index}>{curr}{index!=tags.length-1?', ':''}</li>
-                })}
-            </ul>
-            )
-            </div>
-            <p className="block mt-1 mb-3">{desc}</p>
-            <a href={link} className="bg-[#2f3245] p-1.5 mt-3 rounded-sm hover:underline">Open<i className="fa-solid fa-up-right-from-square ml-1"></i></a>
-
+        <li>
+            <a href={href} className="group bg-[#182a48] text-[#93C5FD] text-sm inline-block p-2 m-1 mt-2 rounded hover:underline hover:bg-[#213659]">{label}<i class="fa-solid fa-square-up-right hidden ml-1 group-hover:inline"></i><i class="fa-solid fa-square-arrow-up-right ml-1 group-hover:hidden" ></i></a>
         </li>
     )
 }

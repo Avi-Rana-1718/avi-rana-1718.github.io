@@ -5,13 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        Hack: ["Hack"],
-        Bona_Nova: ["Bona Nova"]
-      }
-    },
+    extend: {},
   },
   plugins: [],
 }
-
