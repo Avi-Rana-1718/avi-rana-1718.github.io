@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
 import ListItem from "../components/ListItem";
 import Nav from "../components/Nav";
+import TimelineList from "../components/TimelineList";
 
 export default function Index() {
+
+   const [data, setData] = useState(null)
+
+   useEffect(()=>{
+      fetch("data.json").then(res=>res.json()).then(data=>{
+         setData(data);
+      });
+   }, [])
+
     return (
         <>
         <main className="p-4">
@@ -9,9 +20,11 @@ export default function Index() {
                 <p className="mt-10">
                 Hello! My name is Avi Rana! I am computer science student. I try to make cool stuff in my freetime. I like web dev and am somewhat into gamedev.
                 </p>
+             <h5 className="text-3xl font-bold mt-10">Blogs</h5>
+               <TimelineList data={data} />
              <h5 className="text-3xl font-bold mt-10">Projects</h5>
              <ul>
-                <ListItem label="java-wordle" href="https://github.com/Avi-Rana-1718/java-wordle" className="" />
+                <ListItem label="java-wordle" href="https://github.com/Avi-Rana-1718/java-wordle"/>
                 <ListItem label="dishalearning" href="https://github.com/Avi-Rana-1718/dishalearning" />
                 <ListItem label="draw-it" href="https://github.com/Avi-Rana-1718/draw-it" />
                 <ListItem label="Stranded" href="https://github.com/Avi-Rana-1718/Stranded" />

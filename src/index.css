@@ -10,6 +10,13 @@ body {
   padding: 10px;
 }
 
+.blogLink {
+  color: #3b69b9;
+}
+.blogLink:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width:800px) {
   
   body {
