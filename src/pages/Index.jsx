@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ListItem from "../components/ListItem";
 import Nav from "../components/Nav";
 import TimelineList from "../components/TimelineList";
+import { Helmet } from "react-helmet";
 
 export default function Index() {
 
@@ -15,6 +16,11 @@ export default function Index() {
 
     return (
         <>
+        <Helmet>
+        <title>AviRana</title>
+        <meta name="title" content="AviRana" />
+        </Helmet>
+        
         <main className="p-4">
              <Nav />
                 <p className="mt-10">
