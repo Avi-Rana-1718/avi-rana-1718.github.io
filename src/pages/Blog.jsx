@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import Nav from "../components/Nav";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
     const param = useParams();
@@ -22,6 +23,16 @@ export default function Blog() {
 
     return (
         <>
+         <Helmet>
+        <title>{data.title}</title>
+        <meta name="title" content={data.title} />
+        <meta name="description" content={data.byline} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={window.location.href} />
+        <meta property="og:title" content={data.title} />
+        <meta property="og:description" content={data.byline} />
+        </Helmet>
         <Nav />
         <h3 className="text-2xl mt-10">{data.title}</h3>
         <span className="text-sm text-[#919090] block">{data.byline}</span>
