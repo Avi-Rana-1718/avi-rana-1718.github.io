@@ -23,7 +23,7 @@ export default function Blog() {
 
 
     return (
-        <>
+        <main className="p-4">
         <Nav />
         <header className="flex justify-between">
             <div>
@@ -34,6 +34,6 @@ export default function Blog() {
         </header>
         <hr className="mt-3 border-t-[#5c5b5b]"/>
         <p className="mt-5" dangerouslySetInnerHTML={{__html: data.content}}></p>
-        </>
+        </main>
     )
 }
