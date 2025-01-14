@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
-import Nav from "../components/Nav";
-import { Helmet } from "react-helmet";
-import ShareBtn from "../components/ShareBtn";
+import { Link, useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Blog() {
     const param = useParams();
@@ -24,15 +23,18 @@ export default function Blog() {
 
     return (
         <main className="p-4">
-        <Nav />
         <header className="flex justify-between">
             <div>
-            <h3 className="text-2xl mt-10">{data.title}</h3>
-            <span className="text-sm text-[#919090] block">{data.byline}</span>
+            <h3 className="text-3xl mt-4 font-semibold">{data.title}</h3>
+            <span className="text-sm text-[#919090] mt-2 block">{data.byline}</span>
             <time className="text-xs text-[#888]">{new Date(data.timestamp).getDate()+"th "+ (new Date(2024, new Date(data.timestamp).getMonth(), 1).toLocaleString('default', { month: 'long' })) +" " + new Date(data.timestamp).getFullYear()}</time>
             </div>
+            <div className="flex flex-col justify-between">
+            <span className="mt-4 text-2xl mx-auto text-gray-500 hover:text-gray-600"><Link to="/"><FontAwesomeIcon icon={faCircleXmark} /></Link></span>
+            {/* <ShareBtn /> */}
+            </div>
         </header>
-        <hr className="mt-3 border-t-[#5c5b5b]"/>
+        <img className="w-full my-6 rounded mx-auto" src={data.thumbnail} />
         <p className="mt-5" dangerouslySetInnerHTML={{__html: data.content}}></p>
         </main>
     )

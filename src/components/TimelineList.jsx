@@ -25,7 +25,7 @@ export default function TimelineList({data}) {
                 <li>
                     <Link to={"/blogs/" + el.timestamp} className="flex">
                     <span className="ml-2 border-l-2  border-[#656565] p-2"></span>
-                    <TimelineItem title={el.title} byline={el.byline} time={el.timestamp} />
+                    <TimelineItem title={el.title} byline={el.byline} time={el.timestamp} thumbnail={el.thumbnail}/>
                     </Link>
                 </li>
                 </>

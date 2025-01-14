@@ -4,14 +4,14 @@
 
 body {
   font-family: "Hack", monospace;
-  background-color: #1B1B1E;
-  color: #CCCCCC;
-  margin: 0 20vw;
+  background-color: #14141b;
+  color: #F3F4F6;
+  margin: 0 25vw;
   padding: 10px;
 }
 
 .blogLink {
-  color: #3b69b9;
+  color: #4f7ed1;
 }
 .blogLink:hover {
   text-decoration: underline;
