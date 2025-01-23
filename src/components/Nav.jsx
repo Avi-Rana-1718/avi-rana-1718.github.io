@@ -16,7 +16,7 @@ export default function Nav() {
             <small className="mt-2 block">{ageInYears} yrs old - developer - gamer</small>
             <small className="block text-[#949393] pt-1">
             <FontAwesomeIcon icon={faLocationDot} className="mr-1 text-xs"/>
-                <Link className="hover:underline" href="https://g.co/kgs/zRHLUwY">Chandigarh</Link>,<Link className="hover:underline" href="https://g.co/kgs/YPc3yVw">India</Link>
+                <Link className="hover:underline" to="https://g.co/kgs/zRHLUwY">Chandigarh</Link>,<Link className="hover:underline" to="https://g.co/kgs/YPc3yVw">India</Link>
             </small>
         </nav>
     )
