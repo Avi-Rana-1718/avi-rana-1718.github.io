@@ -34,6 +34,7 @@ export default function Index() {
              <h5 className="text-3xl font-bold mt-10 ">Contact me</h5>
              <ul>
                 <ListItem label="github" href="https://github.com/Avi-Rana-1718" />
+                <ListItem label="leetcode" href="https://leetcode.com/u/avirana3449/" />
                 <ListItem label="linkedin" href="https://www.linkedin.com/in/avi-rana/" />
                 <ListItem label="twitter" href="https://x.com/_AviRana" />
                 <ListItem label="myanimelist" href="https://myanimelist.net/profile/_AviRana" />
