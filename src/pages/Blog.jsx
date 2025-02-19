@@ -22,7 +22,7 @@ export default function Blog() {
 
 
     return (
-        <main className="p-4">
+        <main className="p-3 md:p-4">
         <header className="flex justify-between">
             <div>
             <h3 className="text-3xl mt-4 font-semibold">{data.title}</h3>
