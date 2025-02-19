@@ -37,7 +37,7 @@ export default function Blog() {
             <div>
             <h3 className="text-3xl mt-4 font-semibold">{data.title}</h3>
             <span className="text-sm text-[#919090] mt-2 block">{data.byline}</span>
-            <time className="text-xs text-[#888]">{new Date(data.timestamp).getDate()+"th "+ (new Date(2024, new Date(data.timestamp).getMonth(), 1).toLocaleString('default', { month: 'long' })) +" " + new Date(data.timestamp).getFullYear()}</time>
+            <time className="text-xs block mt-2 text-[#888]">{new Date(data.timestamp).getDate()+"th "+ (new Date(2024, new Date(data.timestamp).getMonth(), 1).toLocaleString('default', { month: 'long' })) +" " + new Date(data.timestamp).getFullYear()}</time>
             </div>
             <div className="flex flex-col justify-between">
             <span className="mt-4 text-2xl mx-auto text-gray-500 hover:text-gray-600"><Link to="/"><FontAwesomeIcon icon={faCircleXmark} /></Link></span>
