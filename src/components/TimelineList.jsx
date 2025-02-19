@@ -7,7 +7,7 @@ export default function TimelineList({data}) {
         return <h5>Loading</h5>
     }
 
-    let [posts, setPost] = useState(data)
+    let [posts, setPost] = useState(data.reverse())
     return (
     <ul className="m-4 flex flex-col">
         {
