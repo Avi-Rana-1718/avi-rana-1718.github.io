@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import ListItem from "../components/ListItem";
 import Nav from "../components/Nav";
 import TimelineList from "../components/TimelineList";
+import DocumentMeta from 'react-document-meta';
+
 export default function Index() {
 
    const [data, setData] = useState(null)
@@ -11,6 +13,14 @@ export default function Index() {
          setData(data);
       });
    }, [])
+
+   const meta = {
+      title: "Avi Rana",
+      description: "",
+      meta: {
+        charset: 'utf-8',
+      }
+  }
 
     return (
         <>

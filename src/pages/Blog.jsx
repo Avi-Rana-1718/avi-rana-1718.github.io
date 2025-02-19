@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import DocumentMeta from 'react-document-meta';
 
 export default function Blog() {
     const param = useParams();
@@ -20,9 +21,18 @@ export default function Blog() {
         return <h4>Loading!</h4>
     }
 
+    const meta = {
+        title: data.title + " | Avi Rana",
+        description: data.byline,
+        meta: {
+          charset: 'utf-8',
+        }
+    }
+
 
     return (
         <main className="p-3 md:p-4">
+            <DocumentMeta {...meta} />
         <header className="flex justify-between">
             <div>
             <h3 className="text-3xl mt-4 font-semibold">{data.title}</h3>
