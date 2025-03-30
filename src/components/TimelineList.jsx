@@ -23,7 +23,7 @@ export default function TimelineList({data}) {
                     {(isNewYear)?(new Date(el.timestamp).getFullYear()):null}
                 </h3>
                 <li>
-                    <Link to={"/blogs/" + el.timestamp} className="flex">
+                    <Link to={"/blogs/" + el.title.replace(/[^A-Z0-9]/ig, "").toLowerCase()} className="flex">
                     <span className="ml-2 border-l-2  border-[#656565] p-2"></span>
                     <TimelineItem title={el.title} byline={el.byline} time={el.timestamp} thumbnail={el.thumbnail}/>
                     </Link>
