@@ -10,7 +10,7 @@ export default function Blog() {
     useEffect(()=>{
         fetch("/data.json").then(res=>res.json()).then(data=>{
             data.forEach((el)=>{
-                if(el.title.replace(/[^A-Z0-9]/ig, "").toLowerCase()==param.id) {
+                if(el.timestamp==param.id) {
                     setData(el)               
                 }
             })
