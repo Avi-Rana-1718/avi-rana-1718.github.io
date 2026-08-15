@@ -5,7 +5,7 @@
 body {
   font-family: "Hack", monospace;
   background-color: #15151a;
-  color: #F3F4F6;
+  color: #f3f4f6;
   margin: 0 25vw;
   padding: 10px;
 }
@@ -17,10 +17,8 @@ body {
   text-decoration: underline;
 }
 
-@media screen and (max-width:800px) {
-  
+@media screen and (max-width: 800px) {
   body {
     margin: 0;
   }
-  
 }
