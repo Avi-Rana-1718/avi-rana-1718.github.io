@@ -53,10 +53,10 @@ export default function Blog() {
         </div>
       </header>
       <img className="w-full my-6 rounded mx-auto" src={data.thumbnail} />
-      <p
+      <div
         className="mt-5"
         dangerouslySetInnerHTML={{ __html: data.content }}
-      ></p>
+      ></div>
     </main>
   );
 }

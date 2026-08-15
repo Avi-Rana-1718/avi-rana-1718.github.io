@@ -22,3 +22,59 @@ body {
     margin: 0;
   }
 }
+
+/* Post components. Written as named classes, not Tailwind utilities, because
+   tailwind.config.js only scans index.html and src/ - anything used solely
+   inside public/data.json would get purged. */
+
+.blogCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.blogCard {
+  background: #1c1c23;
+  border: 1px solid #2a2a33;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.blogCard b {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.blogCard span {
+  font-size: 0.8rem;
+  color: #9a9aa5;
+}
+
+.blogNote {
+  border-left: 3px solid #4f7ed1;
+  background: #1a1a22;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 18px 0;
+}
+
+.blogFlow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.blogStep {
+  background: #1c1c23;
+  border: 1px solid #2a2a33;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 0.8rem;
+}
+
+.blogArrow {
+  color: #4f7ed1;
+}
